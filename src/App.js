@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Events from "./1-events/Event"
+import Counter from "./2-classComponent/Counter"
+import UseStateCounter from "./3-useState/UseStateCounter"
+import UseStateObject from "./3-useState/UseStateObject"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Events/>
+      <Counter/>
+      <UseStateCounter/>
+      <UseStateObject/>
+      
     </div>
-  );
+  )
 }
-
-export default App;
+export default App
